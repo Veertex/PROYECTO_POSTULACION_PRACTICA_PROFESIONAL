@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contenedor_flex {
+  font-family: "Carrois Gothic", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: wheat;
+  outline-style: solid;
+  outline-width: 1px;
+  width: 850px;
+}
+.contenedor_flex_footer {
+  font-family: "Carrois Gothic", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: r;
+  background-color: wheat;
+  outline-style: solid;
+  outline-width: 1px;
+  height: 53px;
+  width: 850px;
+  align-items: flex-end;
+}
+
+
+.contenedor_flex_column {
+  font-family: "Carrois Gothic", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: wheat;
+  outline-style: solid;
+  outline-width: 1px;
+  width: 850px;
+  padding-left: 5px;
+}
+
+
+.contenedor_flex img {
+  background-color: cadetblue;
+  outline-style: solid;
+  outline-width: 1px;
+  height: 53px;
+  width: 25%;
+}
+.contenedor_flex footer {
+  height: 53px;
+}
+.barra_navegacion {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  align-items: center;
+  background-color: wheat;
+  justify-content: space-evenly;
+  outline-style: solid;
+  outline-width: 1px;
+}
+.lista {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: row;
+  background-color: aquamarine;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+.sub_lista {
+  list-style: none;
+  display: none;
+  position: absolute;
+}
+
+.elemento_lista {
+  list-style: none;
+  outline-style: solid;
+  outline-width: 1px;
+  text-align: center;
+  background-color: white;
+  font-family: "Carrois Gothic", sans-serif;
+}
+
+.elemento_lista:hover {
+  background-color: cadetblue;
+}
+.lista .elemento_lista:hover > .sub_lista {
+  position: absolute;
+  display: block;
+  flex-direction: column;
+  background-color: aquamarine;
+  outline-style: solid;
+  outline-width: 1px;
+}
+.sub_lista .elemento_lista:hover > .sub_lista {
+  position: absolute;
+  display: inline-block;
+  flex-direction: column;
+  background-color: aquamarine;
+  outline-style: solid;
+  outline-width: 1px;
+}
+.sub_lista .elemento_lista > .sub_lista {
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  margin-left: 1px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  width: 25%;
+  outline-style: solid;
+  outline-width: 1px;
+}
+.contenedor_flex_tabla_head {
+  display: block;
+  overflow-y: scroll;
+  width: 100%;
+  max-height: 209px;
+  background-color: red;
+}
+.contenedor_flex_body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 186px;
+  overflow-y: scroll;
+  background-color: red;
+}
+
+.contenedor_flex_tabla {
+  display: block;
+  width: 75%;
+  height: 100%;
+  max-height: 209px;
+  background-color: red;
+}
+
+.formulario input[type="button"] {
+  margin-top: 5%;
+  width: 50%;
+  font-family: "Carrois Gothic", sans-serif;
+}
+.tabla {
+  outline-width: 1px;
+  width: 100%;
+  height: 100%;
+  background-color: wheat;
+}
+
+.tabla thead {
+  top: 0px;
+  background-color: wheat;
+}
+.tabla td {
+  width: 16%;
+  word-break: break-all;
+}
+.tabla tbody {
+  background-color: white;
+}
